@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 
-/* Without using hooks , it is difficult toupdate values in UI
+/* Without using hooks , it is difficult to update values in UI
 function App() {
 
   let counter = 15;
@@ -18,7 +16,7 @@ function App() {
     console.log("Value decremented");
     counter--;
   }
-  //We do not write addValue() in onclick event , because we need to pass thr function reference, not call the function.
+  //We do not write addValue() in onclick event , because we need to pass the function reference, not call the function.
   //If we write addValue(), then the function is called while rendering, and makes no impact when the button is clicked.
 
   return (

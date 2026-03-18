@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+
+// If we create a function separately that changes bgc based on soem argument, then we wont be able to pass function reference in onClick event , because it would not take any arguments there.
+// ex onClick = {setBgc("red")} would call the function then and there, and hence we use an arrow funtion and change the previous state when button clicked.
 function App() {
   const [bgc, setBgc] = useState("white");
 
